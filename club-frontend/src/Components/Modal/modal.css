@@ -1,0 +1,108 @@
+@import url(../../variables.css);
+
+.ant-modal-title {
+  font-family: Inter !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  line-height: 40px !important;
+  letter-spacing: -0.02em !important;
+  text-align: left !important;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-content .modal-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.modal-content .title-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.modal-content .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+}
+
+.modal-content .title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.modal-content .date {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  color: #a8a29e;
+
+  margin-bottom: 15px;
+}
+
+.ant-modal-content .wrap {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.ant-modal-content .wrap-mini-modal {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.ant-modal-content .ant-form-item {
+  width: 100%;
+}
+
+.ant-modal-content .ant-picker {
+  width: 100%;
+}
+
+.ant-modal-content .ant-btn {
+  gap: 10px;
+  border-radius: 31px;
+  border: 1px 0px 0px 0px;
+  color: var(--ghost-white);
+  background-color: var(--maroon);
+  border: none;
+}
+
+.ant-modal-content .ant-btn:hover {
+  color: var(--maroon) !important;
+  background-color: var(--ghost-white) !important;
+  border: 1px solid var(--maroon) !important;
+}
+
+.modal-content .wrap {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.modal-content .wrap-text {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}

@@ -1,0 +1,187 @@
+@import url(../../../variables.css);
+
+.create-club {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 50px 25px;
+}
+
+.create-club .page-title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-club .page-title {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-bottom: 10px;
+
+  color: var(--maroon);
+}
+
+.create-club .ant-btn {
+  gap: 10px;
+  border-radius: 31px;
+  border: 1px 0px 0px 0px;
+  color: var(--ghost-white);
+  background-color: var(--maroon);
+  border: none;
+}
+
+.create-club .ant-btn:hover {
+  color: var(--maroon) !important;
+  background-color: var(--ghost-white) !important;
+  border: 1px solid var(--maroon) !important;
+}
+
+.create-club .create-form {
+  padding: 25px 25px 0px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.create-club .create-form .title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  color: var(--black);
+}
+
+.create-club .create-form .form-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.create-club .create-form .form-footer .ant-form-item {
+  flex: 1;
+  width: 100%;
+}
+
+.create-club .create-form .form-footer .ant-form-item .ant-btn {
+  width: 100% !important;
+}
+
+.create-club .create-form .form-footer .ant-form-item .ant-upload {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 380px) {
+  .create-club .create-form .form-footer {
+    flex-direction: column;
+  }
+}
+
+.create-club .members-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.create-club .members-wrapper .member-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 10px 20px 10px 20px;
+  gap: 20px;
+  border-radius: 10px;
+
+  padding: 10px 20px;
+  border: 0.5px solid #6c757d80;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+.create-club .members-wrapper .left-wrap {
+  min-width: 200px;
+
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-club .members-wrapper .member-img-wrapper {
+  width: 35px;
+  height: 35px;
+  margin-right: 3.5px;
+}
+
+.create-club .members-wrapper .member-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.create-club .members-wrapper .member-name {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-right: 20px;
+}
+
+.create-club .members-wrapper .role-wrapper {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-club .members-wrapper .member-role {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+
+  color: var(--warm-grey-400);
+}
+
+.create-club .members-wrapper .options {
+  height: 30px;
+}
+
+.create-club .members-wrapper .options:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 490px) {
+  .create-club .members-wrapper {
+    overflow-x: auto;
+  }
+
+  .create-club .members-wrapper .member-row {
+    flex-wrap: nowrap;
+    width: max-content;
+    min-width: 100%;
+  }
+}
+
+.create-club .add-member {
+  width: 100%;
+}
+
+.create-club .create-form .add-member .ant-btn {
+  width: 100% !important;
+}

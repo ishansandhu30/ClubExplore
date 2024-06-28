@@ -1,0 +1,21 @@
+@import url(../../../../variables.css);
+
+.sign-in .app-name-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  font-size: 24px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-in .app-name-wrapper h1 {
+  margin: 0px;
+}
+
+.sign-in .img-wrapper img {
+  width: 200px;
+  height: 200px;
+}

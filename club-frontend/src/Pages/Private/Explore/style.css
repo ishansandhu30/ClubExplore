@@ -1,0 +1,114 @@
+@import url(../../../variables.css);
+
+.explore {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 50px 25px;
+}
+
+.explore .page-title {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-bottom: 10px;
+
+  color: var(--maroon);
+}
+
+.explore .ant-input-search {
+  margin-bottom: 20px;
+  border-color: var(--maroon) !important;
+  width: 100% !important;
+}
+
+.explore .ant-btn {
+  gap: 10px;
+  border-radius: 31px;
+  border: 1px 0px 0px 0px;
+  color: var(--ghost-white) !important;
+  background-color: var(--maroon);
+  border: none;
+}
+
+.explore .ant-btn:hover {
+  color: var(--maroon) !important;
+  background-color: var(--ghost-white) !important;
+  border: 1px solid var(--maroon) !important;
+}
+
+.explore .search-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.explore .clubs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explore .club-card {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+
+  padding: 30px 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0px 2px 6px 0px #1018280f;
+
+  background-color: white;
+}
+
+.explore .club-card:hover {
+  cursor: pointer;
+}
+
+.explore .club-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.explore .club-picture {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.explore .club-picture {
+  width: 175px;
+}
+
+.explore .club-name {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.explore .club-description {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+@media screen and (max-width: 865px) {
+  .explore .club-card {
+    flex-direction: column;
+  }
+
+  .explore .club-picture {
+    max-width: 100%;
+    width: 100%;
+  }
+}

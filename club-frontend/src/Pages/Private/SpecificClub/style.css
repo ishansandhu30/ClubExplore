@@ -1,0 +1,313 @@
+@import url("../../../variables.css");
+
+.specific-club {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 50px 25px;
+}
+
+.specific-club .page-title-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specific-club .page-title {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-bottom: 10px;
+
+  color: var(--maroon);
+}
+
+.specific-club .ant-btn {
+  gap: 10px;
+  border-radius: 31px;
+  border: 1px 0px 0px 0px;
+  color: var(--ghost-white);
+  background-color: var(--maroon);
+  border: none;
+}
+
+.specific-club .ant-btn:hover {
+  color: var(--maroon) !important;
+  background-color: var(--ghost-white) !important;
+  border: 1px solid var(--maroon) !important;
+}
+
+.specific-club .ant-tabs-nav {
+  background-color: #fff;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+
+.specific-club .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--maroon) !important;
+}
+
+.specific-club .ant-tabs-ink-bar {
+  background: var(--maroon) !important;
+}
+
+.specific-club .calendar {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.specific-club .calendar .dropdown-wrapper {
+  position: absolute;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .specific-club .calendar .dropdown-wrapper {
+    position: inherit;
+  }
+}
+
+.specific-club .calendar .ant-picker-calendar-mode-switch {
+  display: none;
+}
+
+.specific-club .calendar .ant-select-selector {
+  border-color: var(--light-maroon) !important;
+}
+
+.specific-club .calendar .ant-select-arrow {
+  color: var(--maroon) !important;
+}
+
+.specific-club .calendar .ant-select-selection-item {
+  color: var(--maroon);
+}
+
+.specific-club .calendar .ant-picker-content th {
+  background-color: var(--light-maroon) !important;
+  color: var(--maroon) !important;
+  font-weight: 600 !important;
+}
+
+.specific-club .calendar .ant-picker-calendar-date-value {
+  color: var(--maroon) !important;
+}
+
+.specific-club .calendar .ant-picker-calendar-date-today {
+  border-color: var(--maroon);
+  background-color: #fff !important;
+}
+
+.specific-club
+  .calendar
+  .ant-picker-calendar-date-today
+  .ant-picker-calendar-date-value {
+  font-weight: 900;
+}
+
+.specific-club .calendar .events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.specific-club .calendar .events li {
+  padding: 0px 4px 0px 4px;
+  gap: 0px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.specific-club .calendar .events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.specific-club .calendar .notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.specific-club .calendar .notes-month section {
+  font-size: 28px;
+}
+
+.specific-club .members-wrapper {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.specific-club .members-wrapper .member-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 10px 20px 10px 20px;
+  gap: 20px;
+  border-radius: 10px;
+
+  padding: 10px 20px;
+  border: 0.5px solid #6c757d80;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+}
+
+.specific-club .members-wrapper .left-wrap {
+  min-width: 200px;
+  gap: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specific-club .members-wrapper .member-img-wrapper {
+  width: 60px;
+
+  margin-right: 3.5px;
+}
+
+.specific-club .members-wrapper .member-img-wrapper img {
+  width: 100%;
+
+  border-radius: 500px;
+}
+
+.specific-club .members-wrapper .member-name {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-right: 20px;
+}
+
+.specific-club .members-wrapper .role-wrapper {
+  flex: 4;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specific-club .members-wrapper .member-role {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+
+  color: var(--warm-grey-400);
+}
+
+.specific-club .members-wrapper .options {
+  height: 30px;
+}
+
+.specific-club .members-wrapper .options:hover {
+  cursor: pointer;
+}
+
+.specific-club .members-wrapper .add-member {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.specific-club .members-wrapper .add-member .ant-btn {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 490px) {
+  .specific-club .members-wrapper {
+    overflow-x: auto;
+  }
+
+  .specific-club .members-wrapper .member-row {
+    flex-wrap: nowrap;
+    width: max-content;
+    min-width: 100%;
+  }
+}
+
+.specific-club .settings {
+  padding: 25px 25px 0px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.specific-club .settings .title {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  color: var(--black);
+}
+
+.specific-club .settings .form-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.specific-club .settings .form-footer .ant-form-item {
+  flex: 1;
+  width: 100%;
+}
+
+.specific-club .settings .form-footer .ant-form-item .ant-btn {
+  width: 100% !important;
+}
+
+.specific-club .settings .form-footer .ant-form-item .ant-upload {
+  width: 100% !important;
+}
+
+@media screen and (max-width: 380px) {
+  .specific-club .settings .form-footer {
+    flex-direction: column;
+  }
+}
+
+.specific-club .setting-footer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.specific-club .setting-footer .ant-btn {
+  width: 100% !important;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: #d9b3b373 !important;
+}
+
+.anticon-delete {
+  color: white;
+}

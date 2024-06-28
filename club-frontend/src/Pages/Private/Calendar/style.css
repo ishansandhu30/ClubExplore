@@ -1,0 +1,111 @@
+@import url("../../../variables.css");
+
+.calendar-page {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: 50px 25px;
+}
+
+.calendar-page .page-title {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-bottom: 10px;
+
+  color: var(--maroon);
+}
+
+.calendar-page .calendar .dropdown-wrapper {
+  position: absolute;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 500px) {
+  .calendar-page .calendar .dropdown-wrapper {
+    position: inherit;
+  }
+}
+
+.calendar-page .calendar {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.calendar-page .calendar .ant-picker-calendar-mode-switch {
+  display: none;
+}
+
+.calendar-page .calendar .ant-select-selector {
+  border-color: var(--light-maroon) !important;
+}
+
+.calendar-page .calendar .ant-select-arrow {
+  color: var(--maroon) !important;
+}
+
+.calendar-page .calendar .ant-select-selection-item {
+  color: var(--maroon);
+}
+
+.calendar-page .calendar .ant-picker-content th {
+  background-color: var(--light-maroon) !important;
+  color: var(--maroon) !important;
+  font-weight: 600 !important;
+}
+
+.calendar-page .calendar .ant-picker-calendar-date-value {
+  color: var(--maroon) !important;
+}
+
+.calendar-page .calendar .ant-picker-calendar-date-today {
+  border-color: var(--maroon);
+  background-color: #fff !important;
+}
+
+.calendar-page
+  .calendar
+  .ant-picker-calendar-date-today
+  .ant-picker-calendar-date-value {
+  font-weight: 900;
+}
+
+.calendar-page .calendar .events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar-page .calendar .events li {
+  padding: 0px 4px 0px 4px;
+  gap: 0px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.calendar-page .calendar .events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.calendar-page .calendar .notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.calendar-page .calendar .notes-month section {
+  font-size: 28px;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background-color: #d9b3b373 !important;
+}

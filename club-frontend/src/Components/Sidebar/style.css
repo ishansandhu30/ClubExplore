@@ -1,0 +1,147 @@
+@import url(../../variables.css);
+
+.sidebar .ant-layout-sider-zero-width-trigger {
+  position: absolute;
+  top: 0;
+  background-color: var(--black);
+}
+
+.sidebar .sidebar-header {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5px 20px 5px;
+}
+
+.sidebar .user-profile {
+  display: flex;
+  gap: 16px;
+}
+
+.sidebar .user-img {
+  height: 50px;
+  width: 50px;
+}
+
+.sidebar .user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.sidebar .user-name {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  color: var(--ghost-white);
+}
+
+.sidebar .user-role {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+
+  color: var(--ghost-white);
+}
+
+.sidebar .ant-layout-sider-children {
+  background-color: var(--black) !important;
+}
+
+.sidebar .ant-menu {
+  background-color: var(--black) !important;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px !important;
+}
+
+.sidebar .ant-menu-title-content a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.sidebar .ant-menu-item-selected {
+  background-color: var(--ghost-white);
+}
+
+.sidebar .ant-menu-item svg {
+  color: var(--maroon);
+}
+
+.sidebar .ant-menu-item {
+  padding: 25px 18px 25px 18px;
+  border-radius: 35px;
+
+  display: flex;
+  align-items: center;
+}
+.sidebar .ant-menu-item-selected .menu-item-label {
+  color: var(--maroon);
+}
+
+.sidebar .menu-item-label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: var(--ghost-white);
+}
+
+.sidebar .sidebar-footer {
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sidebar .logout-btn {
+  width: 100%;
+
+  position: sticky;
+  bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 10px 15px 10px 15px;
+  gap: 10px;
+  border-radius: 27.5px;
+  border: 1px 0px 0px 0px;
+
+  background-color: var(--maroon);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+
+  color: var(--ghost-white);
+}
+
+.sidebar .logout-btn:hover {
+  cursor: pointer;
+}
+
+.sidebar .logout-btn .logout-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar .logout-btn .logout-icon svg {
+  width: 100%;
+  height: 100%;
+}
